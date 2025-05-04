@@ -8,7 +8,8 @@ CORS(app)
 
 # ✅ مفتاح OpenAI (حدثه بمفتاحك الحقيقي)
 client = OpenAI(api_key="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")
-
+def index():
+    return render_template('index.html') 
 # بيانات المستشفيات
 hospitals = [
     {"name": "مجمع الدمام الطبي", "lat": 26.43209, "lng": 50.08371},
